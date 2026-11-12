@@ -1,0 +1,3 @@
+- insert:
+    - id: local-savings
+      name: '@local/dsh-local-savings'

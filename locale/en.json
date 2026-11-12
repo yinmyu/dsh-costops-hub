@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "CostOps Hub",
+    "description": "Opens a cross-session bill page from the CostOps Hub entry in the sidebar: tokens priced at official list prices, split into money saved on local routes and money spent on cloud routes (last hour / today / 7 / 30 days and this session), with per-model session drill-down and CSV export; the composer pill shows the current session. The ledger only reads local session logs and sends nothing; power and hardware are not counted.",
+    "detail": "docs/DETAIL.md"
+  }
+}

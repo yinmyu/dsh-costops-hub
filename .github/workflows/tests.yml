@@ -1,0 +1,34 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  suites:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Syntax
+        run: |
+          node --check index.js
+          node --check client.js
+
+      - name: Host suites
+        run: |
+          node tools/host-smoke.mjs
+          node tools/host-config-smoke.mjs
+
+      - name: Client suite
+        run: node tools/test-client.mjs
+
+      - name: Plugin Manager detail resources
+        run: node tools/detail-check.mjs
+
+      - name: README links and anchors
+        run: node tools/readme-check.mjs

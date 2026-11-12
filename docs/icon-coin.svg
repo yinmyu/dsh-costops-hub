@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Local model savings">
+  <defs>
+    <linearGradient id="tile" x1="10" y1="4" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#123c4a"/>
+      <stop offset="0.45" stop-color="#0e5b57"/>
+      <stop offset="1" stop-color="#0f8a64"/>
+    </linearGradient>
+    <linearGradient id="coinFace" x1="22" y1="20" x2="40" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffeeb8"/>
+      <stop offset="0.45" stop-color="#f6d486"/>
+      <stop offset="1" stop-color="#e2ab4d"/>
+    </linearGradient>
+    <linearGradient id="coinRim" x1="24" y1="18" x2="38" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dfa93f"/>
+      <stop offset="1" stop-color="#ab6f26"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="43" y1="8" x2="56" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4d0"/>
+      <stop offset="1" stop-color="#ffc247"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="20" cy="12" r="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="floor" cx="32" cy="58" r="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#041f24" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#041f24" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="coinShadow" x="8" y="14" width="48" height="50" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1.6" stdDeviation="1.7" flood-color="#03191d" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#tile)"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#floor)"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#sheen)"/>
+  <rect x="3.2" y="3.2" width="57.6" height="57.6" rx="14.8" fill="none" stroke="#ffffff" stroke-opacity="0.13" stroke-width="1.1"/>
+
+  <g filter="url(#coinShadow)">
+    <circle cx="29" cy="35.5" r="15.6" fill="url(#coinRim)"/>
+    <circle cx="29" cy="35.5" r="13.4" fill="url(#coinFace)"/>
+  </g>
+  <circle cx="29" cy="35.5" r="12.2" fill="none" stroke="#a86f22" stroke-opacity="0.35" stroke-width="0.9"/>
+
+  <g fill="none" stroke="#573809" stroke-width="2.55" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25.7 26.8 29 31.3 32.3 26.8"/>
+    <path d="M29 31.3v13.6"/>
+    <path d="M23.9 35.2h10.2"/>
+    <path d="M23.9 39.1h10.2"/>
+  </g>
+
+  <path d="M49.6 7.6 51.3 12.8 56.5 14.5 51.3 16.2 49.6 21.4 47.9 16.2 42.7 14.5 47.9 12.8Z" fill="url(#spark)"/>
+  <path d="M20.4 22.2 21.2 24.9 23.9 25.7 21.2 26.5 20.4 29.2 19.6 26.5 16.9 25.7 19.6 24.9Z" fill="#fff6d8" fill-opacity="0.85"/>
+</svg>
